@@ -1,0 +1,127 @@
+@media (max-width:996px){
+    .site__img{
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+@media (max-width:862px) {
+    header {
+        nav {
+            ul {
+                li:first-child {
+                    transition: margin 0.5s;
+                    margin-left: 10% !important;
+                }
+
+                li {
+                    a {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+        }
+    }
+    .tabs{
+        display: flex;
+        flex-direction: column !important;
+        .tabs__btn{
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 50px;
+            float: none !important;
+            flex-direction: row !important;
+            .tab__btn{
+                max-height: 50px;
+            }
+        }
+        .tabs__main{
+            float: none !important;
+            margin-top: 30px;
+        }
+    }
+}
+@media (max-width:680px){
+    .about__card{
+        max-width: 80%;
+        margin: 15px auto !important;
+    }
+    .site__img{
+        max-width: 80% !important;
+        background-size: 100% !important;
+        margin: 0 auto 0 auto;
+    }
+}
+    
+@media (max-width:580px){
+    header{
+        max-height: 300px;
+        nav{
+            ul{
+                justify-content: flex-end;
+                li{
+                    display: none !important;
+                    &:last-child{
+                        margin: 0 25px 0 0;
+                        display: flex !important;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        
+        nav.click{
+            z-index: 9999999;
+            background-attachment: fixed;
+            overflow: hidden;
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100vh;
+            background: #000;
+            opacity: 0.95;
+            transition: all 0.5s;
+            flex-direction: column;
+            ul{
+                width: 100% !important;
+                height: 50vh !important;
+                flex-direction: column !important;
+                li{
+                    margin: 1% auto !important;
+                    display: flex !important;
+                }
+            }
+        }
+        .header__title{
+            max-width: 100% !important;
+        }
+    }
+}
+
+@media (max-width:470px){
+    header{
+        nav {
+            .header__logo{
+                margin-left: 10% !important;
+            }
+        }
+        .header__title{
+            h1{
+                font-size: 30px !important;
+            }
+            h2{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+@media (max-width:420px){
+    .tab__btn{
+        
+    }
+}
